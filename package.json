@@ -1,0 +1,22 @@
+{
+  "name": "edutive-automation-testing-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuubhambadiwal/edutive-automation-testing-Playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuubhambadiwal/edutive-automation-testing-Playwright/issues"
+  },
+  "homepage": "https://github.com/shuubhambadiwal/edutive-automation-testing-Playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.1"
+  }
+}
