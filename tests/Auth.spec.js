@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-test('Auth Page', async ({ page }) => {
+test('Auth Automation', async ({ page }) => {
   // Navigation to the EduTive website
   await page.goto('https://dev.edu-tive.com/');
   // Locate the "Login" link on the page
@@ -28,10 +28,8 @@ test('Auth Page', async ({ page }) => {
   // Drill through the sidebar menu items
   // const assessmentsLink = page.getByRole('link', { name: 'Assessments', exact: true }).locator('span');
   // await assessmentsLink.click();
-
   // const questionbank = page.getByRole('link', { name: 'Question Bank', exact: true }).locator('span');
   // await questionbank.click();
-
   // const generateQuestionPaperLink = page.getByRole('link', { name: 'Generate Question Paper', exact: true }).locator('span');
   // await generateQuestionPaperLink.click();
 
