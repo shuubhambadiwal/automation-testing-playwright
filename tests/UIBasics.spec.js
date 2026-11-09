@@ -8,16 +8,13 @@ test ('Browser Context Playwright Test', async ({browser})=> {
   const page = await context.newPage(); 
   // The below code will naviagte to the URL in the page.
   page.goto('https://rahulshettyacademy.com/loginpagePractise/');
-  
 })
 
 test ('Page Playwright Test', async ({page})=> {
 // Playwright code
   // The below code will naviagte to the URL in the page.
-  page.goto('https://rahulshettyacademy.com/loginpagePractise/');
-  
+  page.goto('https://www.google.com/');
 })  
-
 
 
 
