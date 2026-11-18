@@ -7,13 +7,13 @@ test ('Browser Context Playwright Test', async ({browser})=> {
   // Here we are creating an new page in the browser.
   const page = await context.newPage(); 
   // The below code will naviagte to the URL in the page.
-  page.goto('https://rahulshettyacademy.com/loginpagePractise/');
+  await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
 })
 
 test ('Page Playwright Test', async ({page})=> {
 // Playwright code
   // The below code will naviagte to the URL in the page.
-  page.goto('https://www.google.com/');
+  await page.goto('https://www.google.com/');
 })  
 
 
