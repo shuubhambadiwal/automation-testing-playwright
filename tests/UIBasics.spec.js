@@ -1,4 +1,4 @@
-const {test} = require('@playwright/test');
+const {test, expect} = require('@playwright/test');
 
 test ('Browser Context Playwright Test', async ({browser})=> {
 // Playwright code
@@ -8,13 +8,20 @@ test ('Browser Context Playwright Test', async ({browser})=> {
   const page = await context.newPage(); 
   // The below code will naviagte to the URL in the page.
   await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
+  console.log(await page.title());
+  // css,xpath
+  await page.locator("#username").fill("rahulshetty");
+  await page.locator("[type = 'password']").fill("learning");
+  await page.locator("#signInBtn").click();
 })
 
-test ('Page Playwright Test', async ({page})=> {
-// Playwright code
-  // The below code will naviagte to the URL in the page.
-  await page.goto('https://www.google.com/');
-})  
+// test ('Page Playwright Test', async ({page})=> {
+// // Playwright code
+//   // The below code will naviagte to the URL in the page.
+//   await page.goto('https://www.google.com/');
+//   console.log(await page.title());
+//   await  expect(page).toHaveTitle("Google");
+// })  
 
 
 

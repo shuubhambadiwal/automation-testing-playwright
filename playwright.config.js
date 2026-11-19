@@ -5,14 +5,15 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
-  timeout: 40000,
+  timeout: 30000,
   expect : {
-    timeout: 30000
+    timeout: 5000
   },
   reporter: 'html',
   use: {
       /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    browserName: 'chromium',
+    headless: false,
   },
 }); 
 
