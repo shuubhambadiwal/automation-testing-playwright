@@ -13,6 +13,8 @@ test ('Browser Context Playwright Test', async ({browser})=> {
   await page.locator("#username").fill("rahulshetty");
   await page.locator("[type = 'password']").fill("learning");
   await page.locator("#signInBtn").click();
+  console.log (await page.locator("[style*='block']").textContent());
+  
 })
 
 // test ('Page Playwright Test', async ({page})=> {
